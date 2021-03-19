@@ -58,18 +58,15 @@ namespace CardGames
 			{
 				SwinGame.LoadFontNamed("GameFont","Chunkfive.otf",24);
 				SwinGame.DrawText ("Top Card is " + top.ToString (), Color.RoyalBlue, 0, 20);
-<<<<<<< HEAD
 				SwinGame.DrawText ("Player 1 score: " + myGame.Score(0), Color.RoyalBlue, 0, 30);
 				SwinGame.DrawText ("Player 2 score: " + myGame.Score(1), Color.RoyalBlue, 0, 40);
 				SwinGame.DrawCell (SwinGame.BitmapNamed ("Cards"),
 				top.CardIndex, 521, 153);
-=======
 				SwinGame.LoadSoundEffectNamed ("Slap1", "slap1.wav");
 				SwinGame.PlaySoundEffect ("Slap1");
 				SwinGame.DrawText ("Player 1 score:"+ myGame.Score(0),Color.Red,"GameFont",0,30);
 				SwinGame.DrawText ("Player 2 score: " + myGame.Score(1), Color.RoyalBlue, "GameFont",0, 40);
 				SwinGame.DrawCell (SwinGame.BitmapNamed ("Cards"), top.CardIndex, 350, 50);
->>>>>>> origin/add-sound-effects
 			}
 			else
 			{
@@ -77,14 +74,11 @@ namespace CardGames
 			}
 
 			// Draw the back of the cards... to represent the deck
-<<<<<<< HEAD
 			SwinGame.DrawCell (SwinGame.BitmapNamed ("Cards"), 52, 155, 153);
-=======
 			SwinGame.DrawCell (SwinGame.BitmapNamed ("Cards"), 52, 160, 50);
 			SwinGame.LoadSoundEffectNamed ("Slap2", "slap2.wav");
 			SwinGame.PlaySoundEffect ("Slap2");
->>>>>>> origin/add-sound-effects
-
+			
 			//Draw onto the screen
 			SwinGame.RefreshScreen(60);
 		    }
